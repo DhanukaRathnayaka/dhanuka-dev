@@ -57,7 +57,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="section py-20 relative overflow-hidden">
       {/* Simple background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-50/10 to-transparent dark:via-purple-900/5" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-50/10 to-transparent dark:via-blue-900/5" />
       
       <div className="container px-6 mx-auto max-w-4xl">
         {/* Header */}
@@ -68,14 +68,14 @@ export default function ContactSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center gap-2 text-sm text-purple-600 dark:text-purple-400 mb-4">
+          <div className="inline-flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400 mb-4">
             <Sparkles className="w-4 h-4" />
             Get in Touch
           </div>
           
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Contact Me{" "}
-            <span className="text-purple-600 dark:text-purple-400">
+            <span className="text-blue-600 dark:text-blue-400">
               <Heart className="w-8 h-8 inline mb-1 ml-1" fill="currentColor" />
             </span>
           </h2>
@@ -96,14 +96,14 @@ export default function ContactSection() {
           >
             <div className="p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
               <div className="flex items-start gap-4">
-                <div className="p-3 rounded-xl bg-purple-100 dark:bg-purple-900/30">
-                  <Mail className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+                <div className="p-3 rounded-xl bg-blue-100 dark:bg-blue-900/30">
+                  <Mail className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
                   <h3 className="font-medium text-gray-900 dark:text-white mb-1">Email</h3>
                   <a
                     href="mailto:dhanukaratrhnayakakck@gmail.com"
-                    className="text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+                    className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                   >
                     dhanukaratrhnayakakck@gmail.com
                   </a>
@@ -120,13 +120,6 @@ export default function ContactSection() {
                   <h3 className="font-medium text-gray-900 dark:text-white mb-1">Location</h3>
                   <p className="text-gray-600 dark:text-gray-300">Kandy, Sri Lanka</p>
                 </div>
-              </div>
-            </div>
-
-            <div className="p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-purple-600 dark:text-purple-400 mb-2">24h</div>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Response Time</p>
               </div>
             </div>
           </motion.div>
@@ -161,7 +154,7 @@ export default function ContactSection() {
                       setIsSubmitted(false)
                       form.reset()
                     }}
-                    className="border-purple-200 dark:border-purple-800 hover:bg-purple-50 dark:hover:bg-purple-900/20"
+                    className="border-blue-200 dark:border-blue-800 hover:bg-blue-50 dark:hover:bg-blue-900/20"
                   >
                     Send Another
                   </Button>
@@ -184,7 +177,7 @@ export default function ContactSection() {
                               <FormControl>
                                 <Input 
                                   placeholder="Your name" 
-                                  className="h-12 bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 focus:border-purple-500 focus:ring-purple-500/20"
+                                  className="h-12 bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 focus:border-blue-500 focus:ring-blue-500/20"
                                   {...field} 
                                 />
                               </FormControl>
@@ -202,7 +195,7 @@ export default function ContactSection() {
                               <FormControl>
                                 <Input 
                                   placeholder="you@example.com" 
-                                  className="h-12 bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 focus:border-purple-500 focus:ring-purple-500/20"
+                                  className="h-12 bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 focus:border-blue-500 focus:ring-blue-500/20"
                                   {...field} 
                                 />
                               </FormControl>
@@ -221,7 +214,7 @@ export default function ContactSection() {
                             <FormControl>
                               <Textarea 
                                 placeholder="What's on your mind?" 
-                                className="min-h-[140px] bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 focus:border-purple-500 focus:ring-purple-500/20"
+                                className="min-h-[140px] bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 focus:border-blue-500 focus:ring-blue-500/20"
                                 {...field} 
                               />
                             </FormControl>
@@ -233,7 +226,7 @@ export default function ContactSection() {
                       <Button 
                         type="submit" 
                         disabled={isSubmitting}
-                        className="w-full h-12 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-medium rounded-lg transition-all hover:shadow-lg hover:shadow-purple-500/30"
+                        className="w-full h-12 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-medium rounded-lg transition-all hover:shadow-lg hover:shadow-blue-500/30"
                       >
                         {isSubmitting ? (
                           <div className="flex items-center gap-2">

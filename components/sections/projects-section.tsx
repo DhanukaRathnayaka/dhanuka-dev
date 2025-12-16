@@ -82,7 +82,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             {project.title}
           </h3>
           {project.subtitle && (
-            <p className="text-purple-400 text-sm font-medium mb-4">
+            <p className="text-blue-400 text-sm font-medium mb-4">
               {project.subtitle}
             </p>
           )}
@@ -108,7 +108,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             <Button
               asChild
               size="sm"
-              className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white shadow-lg shadow-purple-500/20 border-0"
+              className="bg-gradient-to-r from-blue-600 to-blue-600 hover:from-blue-500 hover:to-blue-500 text-white shadow-lg shadow-blue-500/20 border-0"
             >
               <Link href={project.demo} target="_blank">
                 <ExternalLink className="w-4 h-4 mr-2" />
@@ -319,13 +319,13 @@ export default function ProjectsSection(): React.ReactElement {
       id="projects"
       className="projects-section section text-gray-300 relative overflow-hidden"
     >
-      <div className="absolute top-0 right-0 w-96 h-96 bg-violet-600/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl -z-10"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-600/5 rounded-full blur-3xl -z-10"></div>
       {/* Background Canvas */}
       <div className="absolute inset-0 z-0 opacity-40 pointer-events-none">
         <canvas ref={canvasRef} className="w-full h-full" />
       </div>
-      <div className="absolute top-0 right-0 w-96 h-96 bg-violet-600/5 rounded-full blur-3xl -z-10"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl -z-10"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-orange-600/5 rounded-full blur-3xl -z-10"></div>
 
       <div className="container relative z-10 px-4 mx-auto max-w-7xl">
@@ -370,7 +370,7 @@ export default function ProjectsSection(): React.ReactElement {
             <Button
               onClick={() => setShowAll(!showAll)}
               variant="outline"
-              className="border-purple-500/30 text-purple-400 hover:bg-purple-500/10 hover:text-purple-300 transition-colors"
+              className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10 hover:text-blue-300 transition-colors"
             >
               {showAll ? "Show Less" : "Show More Projects"}
             </Button>

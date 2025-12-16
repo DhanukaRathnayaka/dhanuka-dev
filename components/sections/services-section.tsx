@@ -20,7 +20,7 @@ const servicesData = [
     title: "AI Systems",
     description: "Building intelligent systems with machine learning pipelines, LLM integration, and real-time data processing for smart applications.",
     icon: Cpu,
-    gradient: "from-purple-600 to-pink-600",
+    gradient: "from-blue-600 to-cyan-600",
     tech: ["TensorFlow", "PyTorch", "OpenAI", "LangChain"],
     accent: "#9333ea"
   },
@@ -242,7 +242,7 @@ export default function ServicesSection() {
       </div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl" />
+      <div className="absolute top-20 left-10 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
 
       {/* Grid Overlay */}
@@ -260,7 +260,7 @@ export default function ServicesSection() {
         {/* Header - Simplified with no animation */}
         <div className="text-center mb-24">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6">
-            <Zap className="w-4 h-4 text-purple-400" />
+            <Zap className="w-4 h-4 text-blue-400" />
             <span className="text-sm text-gray-300">Specialized Services</span>
           </div>
           
@@ -271,7 +271,7 @@ export default function ServicesSection() {
           </h2>
           
           <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Transforming ideas into <span className="text-purple-400 font-semibold">cutting-edge digital experiences</span> 
+            Transforming ideas into <span className="text-blue-400 font-semibold">cutting-edge digital experiences</span> 
             through innovative technology solutions
           </p>
         </div>
@@ -349,7 +349,7 @@ export default function ServicesSection() {
                 </div>
 
                 {/* Learn More */}
-                <div className="flex items-center gap-2 text-sm text-gray-500 group-hover:text-purple-400 transition-colors">
+                <div className="flex items-center gap-2 text-sm text-gray-500 group-hover:text-blue-400 transition-colors">
                   <span>Explore capabilities</span>
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -363,9 +363,9 @@ export default function ServicesSection() {
         {/* Bottom CTA */}
         <div className="mt-24 text-center">
           <div className="inline-flex items-center gap-4 px-8 py-4 rounded-2xl bg-gradient-to-r from-gray-900/50 to-black/50 border border-gray-800/50 backdrop-blur-sm">
-            <Code className="w-6 h-6 text-purple-400" />
+            <Code className="w-6 h-6 text-blue-400" />
             <span className="text-gray-300">Looking for something specific?</span>
-            <button className="px-6 py-2 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300">
+            <button className="px-6 py-2 rounded-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300">
               Let's Talk
             </button>
           </div>

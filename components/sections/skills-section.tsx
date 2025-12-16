@@ -51,7 +51,7 @@ const ParticleBackground = () => {
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
-          className="absolute rounded-full bg-gradient-to-r from-purple-500/20 to-cyan-500/20"
+          className="absolute rounded-full bg-gradient-to-r from-blue-500/20 to-cyan-500/20"
           style={{
             left: `${particle.x}%`,
             top: `${particle.y}%`,
@@ -152,7 +152,7 @@ const InteractiveCard = ({
             animate={isHovered ? { x: 5 } : { x: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <ChevronRight className="w-4 h-4 text-purple-400" />
+            <ChevronRight className="w-4 h-4 text-blue-400" />
           </motion.div>
         </h3>
         
@@ -175,8 +175,8 @@ const InteractiveCard = ({
                   "relative overflow-hidden transition-all duration-300",
                   "bg-gradient-to-r from-white/5 to-white/[0.02]",
                   "border border-white/10",
-                  "hover:border-white/30 hover:shadow-lg hover:shadow-purple-500/20",
-                  activeSkill === skill && "scale-110 border-purple-500/50"
+                  "hover:border-white/30 hover:shadow-lg hover:shadow-blue-500/20",
+                  activeSkill === skill && "scale-110 border-blue-500/50"
                 )}
               >
                 <AnimatePresence>
@@ -185,7 +185,7 @@ const InteractiveCard = ({
                       initial={{ width: 0 }}
                       animate={{ width: "100%" }}
                       exit={{ width: 0 }}
-                      className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-transparent"
+                      className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-transparent"
                     />
                   )}
                 </AnimatePresence>
@@ -202,7 +202,7 @@ const InteractiveCard = ({
           {Array.from({ length: 5 }).map((_, i) => (
             <motion.div
               key={i}
-              className="absolute w-1 h-1 bg-purple-400 rounded-full"
+              className="absolute w-1 h-1 bg-blue-400 rounded-full"
               initial={{ x: 0, y: 0, opacity: 0 }}
               animate={{
                 x: Math.sin(i) * 100,
@@ -236,13 +236,13 @@ const SkillLevelMeter = ({ skill, level, icon }: { skill: string; level: number;
           <span className="text-zinc-300 group-hover:text-white transition-colors">{skill}</span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-purple-400 font-medium">{level}%</span>
+          <span className="text-blue-400 font-medium">{level}%</span>
           <div className="w-8 h-1.5 bg-white/5 rounded-full overflow-hidden">
             <motion.div
               initial={{ width: 0 }}
               whileInView={{ width: `${(level / 100) * 32}px` }}
               transition={{ duration: 1, delay: 0.2 }}
-              className="h-full bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full"
+              className="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"
             />
           </div>
         </div>
@@ -252,7 +252,7 @@ const SkillLevelMeter = ({ skill, level, icon }: { skill: string; level: number;
           initial={{ width: 0 }}
           whileInView={{ width: `${level}%` }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="h-full bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full"
+          className="h-full bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full"
         />
       </div>
     </div>
@@ -363,11 +363,11 @@ export default function SkillsSection() {
       gradient: "from-green-500/20 to-emerald-500/20"
     },
     {
-      icon: <Brain className="w-6 h-6 text-purple-400" />,
+      icon: <Brain className="w-6 h-6 text-blue-400" />,
       title: "AI Engineering",
       description: "LLM integration and intelligent data pipelines",
       skills: ["TensorFlow", "PyTorch", "LangChain", "OpenAI", "RAG", "Hugging Face"],
-      gradient: "from-purple-500/20 to-pink-500/20"
+      gradient: "from-blue-500/20 to-cyan-500/20"
     },
     {
       icon: <Database className="w-6 h-6 text-orange-400" />,
@@ -469,7 +469,7 @@ export default function SkillsSection() {
       <ParticleBackground />
       
       {/* Animated gradient orbs */}
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-gradient-to-r from-purple-600/10 to-transparent rounded-full blur-3xl" />
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-gradient-to-r from-blue-600/10 to-transparent rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-gradient-to-l from-cyan-600/10 to-transparent rounded-full blur-3xl" />
       
       {/* Grid overlay with animation */}
@@ -487,8 +487,8 @@ export default function SkillsSection() {
             variant="outline" 
             className="mb-6 border-white/20 bg-white/5 backdrop-blur-sm hover:bg-white/10 transition-colors group"
           >
-            <Zap className="w-3 h-3 mr-2 text-purple-400 group-hover:rotate-12 transition-transform" />
-            <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+            <Zap className="w-3 h-3 mr-2 text-blue-400 group-hover:rotate-12 transition-transform" />
+            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-400 bg-clip-text text-transparent">
               Technical Expertise
             </span>
           </Badge>
@@ -498,13 +498,13 @@ export default function SkillsSection() {
               Mastery in{" "}
             </span>
             <span className="relative inline-block">
-              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-cyan-400 bg-clip-text text-transparent">
                 Modern Stack
               </span>
               <motion.div
                 animate={{ x: [0, 100, 0] }}
                 transition={{ duration: 3, repeat: Infinity }}
-                className="absolute -bottom-2 left-0 h-[2px] w-full bg-gradient-to-r from-transparent via-purple-500 to-transparent"
+                className="absolute -bottom-2 left-0 h-[2px] w-full bg-gradient-to-r from-transparent via-blue-500 to-transparent"
               />
             </span>
           </h2>
@@ -536,8 +536,8 @@ export default function SkillsSection() {
         >
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
-                <BarChart className="w-6 h-6 text-purple-400" />
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center">
+                <BarChart className="w-6 h-6 text-blue-400" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-white">Skill Proficiency</h3>
@@ -554,7 +554,7 @@ export default function SkillsSection() {
 
           {/* Skills Visualization */}
           <div className="relative h-64 lg:h-full rounded-2xl overflow-hidden border border-white/10 p-4">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-cyan-500/5" />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-transparent to-cyan-500/5" />
             
             {/* Skills Radar Chart Visualization */}
             <div className="relative w-full h-full flex items-center justify-center">
@@ -592,7 +592,7 @@ export default function SkillsSection() {
                 ].map((point) => (
                   <motion.div
                     key={point.skill}
-                    className="absolute w-3 h-3 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 border border-white/20 shadow-lg shadow-purple-500/20"
+                    className="absolute w-3 h-3 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 border border-white/20 shadow-lg shadow-blue-500/20"
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
                     transition={{ duration: 0.5, delay: point.angle / 100 }}
@@ -641,7 +641,7 @@ export default function SkillsSection() {
         >
           <div className="text-center">
             <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-white/5 to-white/[0.02] border border-white/10 backdrop-blur-sm mb-4">
-              <Palette className="w-5 h-5 text-purple-400" />
+              <Palette className="w-5 h-5 text-blue-400" />
               <h3 className="text-2xl font-bold bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent">
                 Tools & Technologies
               </h3>
@@ -663,7 +663,7 @@ export default function SkillsSection() {
             <ToolCategory 
               title="Mobile Development" 
               tools={mobileTools} 
-              gradient="bg-gradient-to-r from-purple-500 to-pink-500" 
+              gradient="bg-gradient-to-r from-blue-500 to-cyan-500" 
             />
             
             <ToolCategory 
